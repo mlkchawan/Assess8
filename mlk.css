@@ -1,0 +1,143 @@
+*{
+    margin: px;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: azure;
+    background:url("https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 80%;
+    min-height: 90vh;
+    align-content: center;
+    align-items: center;
+    
+}
+.conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    color: #000;
+    align-content: center;
+}
+.film{
+    position:relative;
+    width:80%;
+    height: 550px;
+    border: 2px solid rgba(255,255,2550.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    align-items: center;
+
+}
+.film h2{
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    margin: 10px;
+}
+.film .input-box{
+    position: relative;
+    margin:2px 0 ;
+    border-bottom: 2px solid black;
+    border-radius: 500px;
+    width: 400px;
+
+}
+.film .input-box input{
+    position: relative;
+    margin:15px 0 ;
+    border: 2px solid rgb(7, 8, 2);
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+}
+.input-box ::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    color: blueviolet;
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+
+}
+#result{
+    color: rgb(19, 20, 18);
+     font-weight: 400;
+     position: relative;
+     top: 20px;
+     left: 60px;
+     }
+
+.group span a{
+    color: aliceblue;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight:90 ;
+
+}
+.group a:focus{
+    text-decoration:underline
+}
+.popup{
+    width: 450px;
+    background-color: rgb(20, 125, 212);
+    background: white;
+    height: 10vh;
+    border-radius: 6px;
+    top: 250px;
+    left: 42%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform .4s,top .4s;
+    position: absolute;
+    text-align: center;
+    padding: 0px 10px 30px ;
+    height: 250px;
+    color: #df6060;
+    visibility: visible ;
+}
+.popup ion-icon{
+    color:rgb(133, 232, 27);
+    font-size: 60px;
+    
+}
+.popup button{
+    width: 100%;
+    background: greenyellow;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgb(60, 83, 104);
+    box-shadow:0 0 2px rgba(0,0,0,.1);
+}
+.popup a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 2px;
+    letter-spacing: 2px;
+}
+.open-slide{
+    top: 50%;
+    transform: translate(50%,-50%) scale(0  );
+    visibility: hidden;
+}
