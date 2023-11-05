@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.cover {
+    background: skyblue;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0px;
+    animation: fade-out 4s;
+}
+
+.cover #icon{
+    --size:10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: var(--size);
+    animation: zoom-in 2s;
+    animation-delay: 2s;
+}
+
+@keyframes zoom-in {
+    50%{
+        width: var(--size);
+    }
+    60%{
+        width: calc(var(--size)*0.9);
+    }
+    100%{
+        width: 250%;
+    }
+    
+}
+@keyframes fade-out {
+    0%,85%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.content{
+    width: 100px;
+}
+=================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splash</title>
+    <link rel="styleesheet" href="splash.css">
+</head>
+<body>
+   <div class="cover">
+    <img src="https://www.computerhope.com/tips/images/igoogle-homepage.png" id="icon">
+   </div>
+<img src="C:\certificate\SIGN.jpeg" class="content">
+</body>
+</html>
